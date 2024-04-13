@@ -1,5 +1,5 @@
 import { db } from "@/firebase";
-import { LanguageSupported } from "@/store/store";
+import { LanguagesSupported } from "@/store/store";
 import {
   DocumentData,
   FirestoreDataConverter,
@@ -24,7 +24,7 @@ export interface Message {
   timestamp: Date;
   user: User;
   translated?: {
-    [K in LanguageSupported]?: string;
+    [K in LanguagesSupported]?: string;
   };
 }
 
