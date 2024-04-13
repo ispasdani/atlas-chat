@@ -13,7 +13,7 @@ const UpgradeBanner = () => {
 
   const router = useRouter();
 
-  if (activeSubscription && isPro) {
+  if (activeSubscription === "active" && isPro) {
     return (
       <>
         <Button
