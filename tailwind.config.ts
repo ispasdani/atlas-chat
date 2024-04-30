@@ -77,6 +77,10 @@ const config = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      backgroundImage: {
+        "gradient-custom1":
+          "linear-gradient(90deg, rgba(252,70,107,1) 0%, rgba(63,94,251,1) 65%)",
+      },
       boxShadow: {
         "3xl": "0 10px 40px rgba(0, 0, 0, 0.1)",
       },

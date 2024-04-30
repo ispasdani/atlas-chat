@@ -7,6 +7,7 @@ import ClientProviders from "@/utils/ClientProviders";
 import FirebaseAuthProvider from "@/utils/FirebaseAuthProvider";
 import SubscriptionProvider from "@/utils/SubscriptionProvider";
 import { Toaster } from "@/components/ui/toaster";
+import BackgroundLines from "@/components/backgroundLines/BackgroundLines";
 
 const inter = Inter({ subsets: ["latin"] });
 

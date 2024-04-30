@@ -1,6 +1,6 @@
 "use client";
+
 import PricingCards from "@/components/pricingCards/PricingCards";
-import { useSubscriptionStore } from "@/store/store";
 import React from "react";
 
 const tiers = [

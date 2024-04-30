@@ -2,18 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import Image from "next/image";
+import LogoSvg from "@/svgs/LogoSvg";
 
 const Logo = () => {
   return (
     <Link href={"/"} prefetch={false} className="overflow-hidden">
-      <div className="flex items-center justify-start w-72 h-14">
-        <Image
-          priority
-          src={"/icons/atlasLogo.svg"}
-          alt="Atlas Logo"
-          width={90}
-          height={50}
-        />
+      <div className="flex items-center justify-start">
+        <LogoSvg />
       </div>
     </Link>
   );

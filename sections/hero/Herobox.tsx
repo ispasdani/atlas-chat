@@ -1,11 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import stlyes from "@/sections/hero/styles.module.scss";
 
 function Herobox() {
   return (
-    <section className="w-full flex flex-col justify-start items-center">
+    <section className="w-full flex flex-col justify-start items-center relative">
       <h1 className="w-full text-8xl font-bold text-blue-500 flex justify-center items-center pt-10">
-        ATLAS
+        Atlas
       </h1>
       <p className="w-full text-3xl flex justify-center items-center py-1">
         is breaking down language barriers!
@@ -33,8 +35,18 @@ function Herobox() {
           View pricing
         </Link>
       </div>
-      <div className="z-10 h-[550px] w-[460px] bg-primary-coral-red mb-10 mt-20">
+      <div className="z-10 h-[550px] w-[460px] bg-primary-coral-red absolute bottom-[-100px] left-[50%] translate-x-[-50%]">
         video Card
+      </div>
+
+      <div className={stlyes.gradientBg}>
+        <div className={stlyes.gradientsContainer}>
+          <div className={stlyes.g1}></div>
+          <div className={stlyes.g2}></div>
+          <div className={stlyes.g3}></div>
+          <div className={stlyes.g4}></div>
+          <div className={stlyes.g5}></div>
+        </div>
       </div>
     </section>
   );
